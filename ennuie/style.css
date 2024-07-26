@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #6D7559;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    /* display: flex;
+    flex-direction: column; */
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* background-color: #BFCD9C; */
+    background-image: url(image/board.png);
+    background-repeat: no-repeat;
+    background-size: 80vh;
+    background-position: 10vh;
+
+}
+
+.row {
+    display: flex;
+}
+
+.top-row, .bottom-row {
+    flex: 1;
+    flex-direction: row;
+}
+
+.middle-rows {
+    display: flex;
+    flex: 10;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.property {
+    flex: 1;
+    border: 1px solid #000;
+    display: flex;
+    font-size: 3vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 7.5vh;
+    width: 7.5vh;
+    padding: 10px;
+}
+
+/* .corner {
+    flex: 1.5;
+    border: 1px solid #000;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 7.5vh;
+    height: 7.5vh;
+    padding: 10px;
+    background-color: #ccc;
+} */
+
+.vertical {
+    flex-direction: column;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    width: 7.5vh;
+    height: 7.5vh;
+    padding: 10px; 
+}
+
+.center {
+width: 77vh;
+}
+
+#r1{
+    background-color: grey;
+}
+
+#r2{
+    background-color: #AE3F6B;
+}
+
+#r3{
+    background-color: #AE3F6B;
+}
+
+#r4{
+    background-color: #F28907;
+}
+
+#r5{
+    background-color: grey;
+}
+
+#r6{
+    background-color: #F28907;
+}
+
+#r7{
+    background-color: #F28907;
+}
+
+#r8{
+    background-color: gray;
+}
+#r9{
+    background-color: gray;
+}
+#r10{
+    background-color: #6E3EBD;
+}
+#r11{
+    background-color: #6E3EBD;
+}
+#r12{
+    background-color: #FB532F;
+}
+#r13{
+    background-color: gray;
+}
+#r14{
+    background-color: #FB532F;
+}
+#r15{
+    background-color: #FB532F;
+}
+#r16{
+    background-color: gray;
+}
+
+#c1{
+    background-color: #1C906C;
+}
+
+#c2{
+    background-color: #1C906C;
+}
+
+#c3{
+    background-color: #8F5422;
+}
+
+#c4{
+    background-color: #1C906C;
+}
+
+#c5{
+    background-color: #1C906C;
+}
+
+#c6{
+    background-color:#59B4F6;
+}
+
+#c7{
+    background-color:#59B4F6;
+}
+
+#c8{
+    background-color:#59B4F6;
+}
+
+#c9{
+    background-color:grey;
+}
+#c10{
+    background-color:#59B4F6;
+}
+#c11{
+    background-color:#8DBB44;
+}
+#c12{
+    background-color:#8DBB44;
+}

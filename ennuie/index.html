@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monopoly Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="state">
+        <p id="money1" >player1: 1000$</p>
+        <p id="pos1" >position: Start</p>
+        <p id="money2" >player2: 1000$</p>
+        <p id="pos2" >position: Start</p>
+        <p id="money3" >player3: 1000$</p>
+        <p id="pos3" >position: Start</p>
+        <p id="money4" >player4: 1000$</p>
+        <p id="pos4" >position: Start</p>
+        <!-- <p id="player" ></p> -->
+        <p id="round" >au joueur: 1</p>
+    </div>
+
+    <button onclick="des()">des</button>
+    <div class="container">
+        <div class="board">
+            <div class="row top-row">
+                <div id="r1" class="property">Chance</div>
+                <div id="r2" class="property">Jakarta</div>
+                <div id="r3" class="property">Berlin</div>
+                <div id="r4" class="property">Moscow</div>
+                <div id="r5" class="property">Railway</div>
+                <div id="r6" class="property">Toronto</div>
+                <div id="r7" class="property">Seoul</div>
+                <div id="r8" class="property">Jail</div>
+            </div>
+            <div class="middle-rows">
+                <div class="row">
+                    <div id="c7" class="property vertical">Madrid</div>
+                    <div class="space center"></div>
+                    <div id="c1" class="property vertical">Zeruich</div>
+                </div>
+                <div class="row">
+                    <div id="c8" class="property vertical">cairo</div>
+                    <div class="space center"></div>
+                    <div id="c2" class="property vertical">Riyadh</div>
+                </div>
+                <div class="row">
+                    <div id="c9" class="property vertical">harbor</div>
+                    <div class="space center"></div>
+                    <div id="c3" class="property vertical">sydney</div>
+                </div>
+                <div class="row">
+                    <div id="c10" class="property vertical">bangkok</div>
+                    <div class="space center"></div>
+                    <div id="c4" class="property vertical">elec</div>
+                </div>
+                <div class="row">
+                    <div id="c11" class="property vertical">dehli</div>
+                    <div class="space center"></div>
+                    <div id="c5" class="property vertical">beijng</div>
+                </div>
+                <div class="row">
+                    <div id="c12" class="property vertical">rio</div>
+                    <div class="space center"></div>
+                    <div id="c6" class="property vertical">Dubai</div>
+                </div>
+                <!-- Add more middle rows as needed -->
+            </div>
+            <div class="row bottom-row">
+                <div id="r16" class="property">Free Start</div>
+                <div id="r15" class="property">New York</div>
+                <div id="r14" class="property">Tokyo</div>
+                <div id="r13" class="property">Airport</div>
+                <div id="r12" class="property">London</div>
+                <div id="r11" class="property">Hong Kong</div>
+                <div id="r10" class="property">Paris</div>
+                <div id="r9" class="property">Trade</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+</html>
