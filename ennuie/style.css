@@ -184,3 +184,20 @@ width: 77vh;
 #c12{
     background-color:#8DBB44;
 }
+
+#pion1{
+    background-color: rgb(19, 19, 228);
+    border-radius: 50px;
+}
+#pion2{
+    background-color: rgb(230, 23, 23);
+    border-radius: 50px;
+}
+#pion3{
+    background-color: rgb(21, 241, 21);
+    border-radius: 50px;
+}
+#pion4{
+    background-color: rgb(255, 255, 0);
+    border-radius: 50px;
+}

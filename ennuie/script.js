@@ -27,22 +27,22 @@ let ny = 360
 
 // seting player \\
 let player1 = 0
-let money1 = 10000
+let money1 = 1000
 let house1 = []
 let p1paid = []
 
 let player2 = 0
-let money2 = 10000
+let money2 = 1000
 let house2 = []
 let p2paid = []
 
 let player3 = 0
-let money3 = 10000
+let money3 = 1000
 let house3 = []
 let p3paid = []
 
 let player4 = 0
-let money4 = 10000
+let money4 = 1000
 let house4 = []
 let p4paid = []
 
@@ -56,17 +56,22 @@ let stored = 0
 
 
 function affiche(){
-    document.getElementById("money1").innerText = `player1: ${money1} ${player1}$`
-    document.getElementById("money2").innerText = `player2: ${money2} ${player2}$`
-    document.getElementById("money3").innerText = `player3: ${money3} ${player3}$`
-    document.getElementById("money4").innerText = `player4: ${money4} ${player4}$`
-    // document.getElementById("player").innerText = `${player1}`
+    document.getElementById("array1").innerText = `:: ${take}`
+    document.getElementById("money1").innerText = `player1: ${money1}$`
+    document.getElementById("money2").innerText = `player2: ${money2}$`
+    document.getElementById("money3").innerText = `player3: ${money3}$`
+    document.getElementById("money4").innerText = `player4: ${money4}$`
     document.getElementById("round").innerText = `au joueur: ${round}`
+    // document.getElementById("money1").innerText = `player1: ${money1} ${player1}$`
+    // document.getElementById("money2").innerText = `player2: ${money2} ${player2}$`
+    // document.getElementById("money3").innerText = `player3: ${money3} ${player3}$`
+    // document.getElementById("money4").innerText = `player4: ${money4} ${player4}$`
+    // document.getElementById("round").innerText = `au joueur: ${round}`
 }
 
 function des(){
-    // roll = Math.floor(Math.random()*2)
-    roll = 1
+    roll = Math.floor(Math.random()*7)
+    // roll = 1
     stored = roll
     // document.getElementById("nombre").innerText = `${stored}`
     attribution()
@@ -618,7 +623,7 @@ function attribution(){
 
         function zeruichb(){
             if (take[13] == null){
-                if (player1 == 14 && money1 >= 250 && house1[13] != "wont"){
+                if (player1 == 15 && money1 >= 250 && house1[13] != "wont"){
                     const reponse = confirm("player 1, do you want to buy zeruich?")
                     if (reponse){
                         take[13] = "1"
@@ -627,7 +632,7 @@ function attribution(){
                     house1[13] = "wont"
                 }
                 }
-                if (player2 == 14 && money2 >= 250 && house2[13] != "wont"){
+                if (player2 == 15 && money2 >= 250 && house2[13] != "wont"){
                     const reponse = confirm("player 2, do you want to buy zeruich?")
                     if (reponse){
                         take[13] = "2"
@@ -636,7 +641,7 @@ function attribution(){
                         house2[13] = "wont"
                     }
                 }
-                if (player3 == 14 && money3 >= 250 && house3[13] != "wont"){
+                if (player3 == 15 && money3 >= 250 && house3[13] != "wont"){
                     const reponse = confirm("player 3, do you want to buy zeruich?")
                     if (reponse){
                         money3 -= 250
@@ -645,7 +650,7 @@ function attribution(){
                         house3[13] = "wont"
                     }
                 }
-                if (player4 == 14 && money4 >= 250 && house4[13] != "wont"){
+                if (player4 == 15 && money4 >= 250 && house4[13] != "wont"){
                     const reponse = confirm("player 4, do you want to buy zeruich?")
                     if (reponse){
                         take[13] = "4"
@@ -659,7 +664,7 @@ function attribution(){
 
         function riyadb(){
             if (take[14] == null){
-                if (player1 == 15 && money1 >= 250 && house1[14] != "wont"){
+                if (player1 == 16 && money1 >= 250 && house1[14] != "wont"){
                     const reponse = confirm("player 1, do you want to buy riyad?")
                     if (reponse){
                         take[14] = "1"
@@ -668,7 +673,7 @@ function attribution(){
                     house1[14] = "wont"
                 }
                 }
-                if (player2 == 15 && money2 >= 250 && house2[14] != "wont"){
+                if (player2 == 16 && money2 >= 250 && house2[14] != "wont"){
                     const reponse = confirm("player 2, do you want to buy riyad?")
                     if (reponse){
                         take[14] = "2"
@@ -677,7 +682,7 @@ function attribution(){
                         house2[14] = "wont"
                     }
                 }
-                if (player3 == 15 && money3 >= 250 && house3[14] != "wont"){
+                if (player3 == 16 && money3 >= 250 && house3[14] != "wont"){
                     const reponse = confirm("player 3, do you want to buy riyad?")
                     if (reponse){
                         money3 -= 250
@@ -686,7 +691,7 @@ function attribution(){
                         house3[14] = "wont"
                     }
                 }
-                if (player4 == 15 && money4 >= 250 && house4[14] != "wont"){
+                if (player4 == 16 && money4 >= 250 && house4[14] != "wont"){
                     const reponse = confirm("player 4, do you want to buy riyad?")
                     if (reponse){
                         take[14] = "4"
@@ -700,7 +705,7 @@ function attribution(){
 
         function sydneyb(){
             if (take[15] == null){
-                if (player1 == 16 && money1 >= 300 && house1[15] != "wont"){
+                if (player1 == 17 && money1 >= 300 && house1[15] != "wont"){
                     const reponse = confirm("player 1, do you want to buy sydney?")
                     if (reponse){
                         take[15] = "1"
@@ -709,7 +714,7 @@ function attribution(){
                     house1[15] = "wont"
                 }
                 }
-                if (player2 == 16 && money2 >= 300 && house2[15] != "wont"){
+                if (player2 == 17 && money2 >= 300 && house2[15] != "wont"){
                     const reponse = confirm("player 2, do you want to buy sydney?")
                     if (reponse){
                         take[15] = "2"
@@ -718,7 +723,7 @@ function attribution(){
                         house2[15] = "wont"
                     }
                 }
-                if (player3 == 16 && money3 >= 300 && house3[15] != "wont"){
+                if (player3 == 17 && money3 >= 300 && house3[15] != "wont"){
                     const reponse = confirm("player 3, do you want to buy sydney?")
                     if (reponse){
                         money3 -= 300
@@ -727,7 +732,7 @@ function attribution(){
                         house3[15] = "wont"
                     }
                 }
-                if (player4 == 16 && money4 >= 300 && house4[15] != "wont"){
+                if (player4 == 17 && money4 >= 300 && house4[15] != "wont"){
                     const reponse = confirm("player 4, do you want to buy sydney?")
                     if (reponse){
                         take[15] = "4"
@@ -741,7 +746,7 @@ function attribution(){
 
         function elecb(){
             if (take[16] == null){
-                if (player1 == 17 && money1 >= 200 && house1[16] != "wont"){
+                if (player1 == 18 && money1 >= 200 && house1[16] != "wont"){
                     const reponse = confirm("player 1, do you want to buy elec?")
                     if (reponse){
                         take[16] = "1"
@@ -750,7 +755,7 @@ function attribution(){
                     house1[16] = "wont"
                 }
                 }
-                if (player2 == 17 && money2 >= 200 && house2[16] != "wont"){
+                if (player2 == 18 && money2 >= 200 && house2[16] != "wont"){
                     const reponse = confirm("player 2, do you want to buy elec?")
                         take[16] = "2"
                         money2 -= 200
@@ -758,7 +763,7 @@ function attribution(){
                         house2[16] = "wont"
                     }
                 }
-                if (player3 == 17 && money3 >= 200 && house3[16] != "wont"){
+                if (player3 == 18 && money3 >= 200 && house3[16] != "wont"){
                     const reponse = confirm("player 3, do you want to buy elec?")
                     if (reponse){
                         money3 -= 200
@@ -767,7 +772,7 @@ function attribution(){
                         house3[16] = "wont"
                     }
                 }
-                if (player4 == 17 && money4 >= 200 && house4[16] != "wont"){
+                if (player4 == 18 && money4 >= 200 && house4[16] != "wont"){
                     const reponse = confirm("player 4, do you want to buy elec?")
                     if (reponse){
                         take[16] = "4"
@@ -780,7 +785,7 @@ function attribution(){
 
         function beijngb(){
             if (take[17] == null){
-                if (player1 == 18 && money1 >= 300 && house1[17] != "wont"){
+                if (player1 == 19 && money1 >= 300 && house1[17] != "wont"){
                     const reponse = confirm("player 1, do you want to buy beijng?")
                     if (reponse){
                         take[17] = "1"
@@ -789,7 +794,7 @@ function attribution(){
                     house1[17] = "wont"
                 }
                 }
-                if (player2 == 18 && money2 >= 300 && house2[17] != "wont"){
+                if (player2 == 19 && money2 >= 300 && house2[17] != "wont"){
                     const reponse = confirm("player 2, do you want to buy beijng?")
                     if (reponse){
                         take[17] = "2"
@@ -798,7 +803,7 @@ function attribution(){
                         house2[17] = "wont"
                     }
                 }
-                if (player3 == 18 && money3 >= 300 && house3[17] != "wont"){
+                if (player3 == 19 && money3 >= 300 && house3[17] != "wont"){
                     const reponse = confirm("player 3, do you want to buy beijng?")
                     if (reponse){
                         money3 -= 300
@@ -807,7 +812,7 @@ function attribution(){
                         house3[17] = "wont"
                     }
                 }
-                if (player4 == 18 && money4 >= 300 && house4[17] != "wont"){
+                if (player4 == 19 && money4 >= 300 && house4[17] != "wont"){
                     const reponse = confirm("player 4, do you want to buy beijng?")
                     if (reponse){
                         take[17] = "4"
@@ -821,7 +826,7 @@ function attribution(){
 
         function dubaib(){
             if (take[18] == null){
-                if (player1 == 19 && money1 >= 300 && house1[18] != "wont"){
+                if (player1 == 20 && money1 >= 300 && house1[18] != "wont"){
                     const reponse = confirm("player 1, do you want to buy doubai?")
                     if (reponse){
                         take[18] = "1"
@@ -830,7 +835,7 @@ function attribution(){
                     house1[18] = "wont"
                 }
                 }
-                if (player2 == 19 && money2 >= 300 && house2[18] != "wont"){
+                if (player2 == 20 && money2 >= 300 && house2[18] != "wont"){
                     const reponse = confirm("player 2, do you want to buy doubai?")
                     if (reponse){
                         take[18] = "2"
@@ -839,7 +844,7 @@ function attribution(){
                         house2[18] = "wont"
                     }
                 }
-                if (player3 == 19 && money3 >= 300 && house3[18] != "wont"){
+                if (player3 == 20 && money3 >= 300 && house3[18] != "wont"){
                     const reponse = confirm("player 3, do you want to buy doubai?")
                     if (reponse){
                         money3 -= 300
@@ -848,7 +853,7 @@ function attribution(){
                         house3[18] = "wont"
                     }
                 }
-                if (player4 == 19 && money4 >= 300 && house4[18] != "wont"){
+                if (player4 == 20 && money4 >= 300 && house4[18] != "wont"){
                     const reponse = confirm("player 4, do you want to buy doubai?")
                     if (reponse){
                         take[18] = "4"
@@ -862,7 +867,7 @@ function attribution(){
 
         function parisb(){
             if (take[20] == null){
-                if (player1 == 21 && money1 >= 350 && house1[20] != "wont"){
+                if (player1 == 22 && money1 >= 350 && house1[20] != "wont"){
                     const reponse = confirm("player 1, do you want to buy paris?")
                     if (reponse){
                         take[20] = "1"
@@ -871,7 +876,7 @@ function attribution(){
                     house1[20] = "wont"
                 }
                 }
-                if (player2 == 21 && money2 >= 350 && house2[20] != "wont"){
+                if (player2 == 22 && money2 >= 350 && house2[20] != "wont"){
                     const reponse = confirm("player 2, do you want to buy paris?")
                     if (reponse){
                         take[20] = "2"
@@ -880,7 +885,7 @@ function attribution(){
                         house2[20] = "wont"
                     }
                 }
-                if (player3 == 21 && money3 >= 350 && house3[20] != "wont"){
+                if (player3 == 22 && money3 >= 350 && house3[20] != "wont"){
                     const reponse = confirm("player 3, do you want to buy paris?")
                     if (reponse){
                         money3 -= 350
@@ -889,7 +894,7 @@ function attribution(){
                         house3[20] = "wont"
                     }
                 }
-                if (player4 == 21 && money4 >= 350 && house4[20] != "wont"){
+                if (player4 == 22 && money4 >= 350 && house4[20] != "wont"){
                     const reponse = confirm("player 4, do you want to buy paris?")
                     if (reponse){
                         take[20] = "4"
@@ -903,7 +908,7 @@ function attribution(){
 
         function hongkongb(){
             if (take[21] == null){
-                if (player1 == 22 && money1 >= 350 && house1[21] != "wont"){
+                if (player1 == 23 && money1 >= 350 && house1[21] != "wont"){
                     const reponse = confirm("player 1, do you want to buy hongkong?")
                     if (reponse){
                         take[21] = "1"
@@ -912,7 +917,7 @@ function attribution(){
                     house1[21] = "wont"
                 }
                 }
-                if (player2 == 22 && money2 >= 350 && house2[21] != "wont"){
+                if (player2 == 23 && money2 >= 350 && house2[21] != "wont"){
                     const reponse = confirm("player 2, do you want to buy hongkong?")
                     if (reponse){
                         take[21] = "2"
@@ -921,7 +926,7 @@ function attribution(){
                         house2[21] = "wont"
                     }
                 }
-                if (player3 == 22 && money3 >= 350 && house3[21] != "wont"){
+                if (player3 == 23 && money3 >= 350 && house3[21] != "wont"){
                     const reponse = confirm("player 3, do you want to buy hongkong?")
                     if (reponse){
                         money3 -= 350
@@ -930,7 +935,7 @@ function attribution(){
                         house3[21] = "wont"
                     }
                 }
-                if (player4 == 22 && money4 >= 350 && house4[21] != "wont"){
+                if (player4 == 23 && money4 >= 350 && house4[21] != "wont"){
                     const reponse = confirm("player 4, do you want to buy hongkong?")
                     if (reponse){
                         take[21] = "4"
@@ -944,7 +949,7 @@ function attribution(){
 
         function londonb(){
             if (take[22] == null){
-                if (player1 == 23 && money1 >= 420 && house1[22] != "wont"){
+                if (player1 == 24 && money1 >= 420 && house1[22] != "wont"){
                     const reponse = confirm("player 1, do you want to buy london?")
                     if (reponse){
                         take[22] = "1"
@@ -953,7 +958,7 @@ function attribution(){
                     house1[22] = "wont"
                 }
                 }
-                if (player2 == 23 && money2 >= 420 && house2[22] != "wont"){
+                if (player2 == 24 && money2 >= 420 && house2[22] != "wont"){
                     const reponse = confirm("player 2, do you want to buy london?")
                     if (reponse){
                         take[22] = "2"
@@ -962,7 +967,7 @@ function attribution(){
                         house2[22] = "wont"
                     }
                 }
-                if (player3 == 23 && money3 >= 420 && house3[22] != "wont"){
+                if (player3 == 24 && money3 >= 420 && house3[22] != "wont"){
                     const reponse = confirm("player 3, do you want to buy london?")
                     if (reponse){
                         money3 -= 420
@@ -971,7 +976,7 @@ function attribution(){
                         house3[22] = "wont"
                     }
                 }
-                if (player4 == 23 && money4 >= 420 && house4[22] != "wont"){
+                if (player4 == 24 && money4 >= 420 && house4[22] != "wont"){
                     const reponse = confirm("player 4, do you want to buy london?")
                     if (reponse){
                         take[22] = "4"
@@ -985,7 +990,7 @@ function attribution(){
 
         function airportb(){
             if (take[23] == null){
-                if (player1 == 24 && money1 >= 150 && house1[23] != "wont"){
+                if (player1 == 25 && money1 >= 150 && house1[23] != "wont"){
                     const reponse = confirm("player 1, do you want to buy airport?")
                     if (reponse){
                         take[23] = "1"
@@ -994,7 +999,7 @@ function attribution(){
                     house1[23] = "wont"
                 }
                 }
-                if (player2 == 24 && money2 >= 150 && house2[23] != "wont"){
+                if (player2 == 25 && money2 >= 150 && house2[23] != "wont"){
                     const reponse = confirm("player 2, do you want to buy airport?")
                     if (reponse){
                         take[23] = "2"
@@ -1003,7 +1008,7 @@ function attribution(){
                         house2[23] = "wont"
                     }
                 }
-                if (player3 == 24 && money3 >= 150 && house3[23] != "wont"){
+                if (player3 == 25 && money3 >= 150 && house3[23] != "wont"){
                     const reponse = confirm("player 3, do you want to buy airport?")
                     if (reponse){
                         money3 -= 150
@@ -1012,7 +1017,7 @@ function attribution(){
                         house3[23] = "wont"
                     }
                 }
-                if (player4 == 24 && money4 >= 150 && house4[23] != "wont"){
+                if (player4 == 25 && money4 >= 150 && house4[23] != "wont"){
                     const reponse = confirm("player 4, do you want to buy airport?")
                     if (reponse){
                         take[23] = "4"
@@ -1026,7 +1031,7 @@ function attribution(){
 
         function tokyob(){
             if (take[24] == null){
-                if (player1 == 25 && money1 >= 420 && house1[24] != "wont"){
+                if (player1 == 26 && money1 >= 420 && house1[24] != "wont"){
                     const reponse = confirm("player 1, do you want to buy tokyo?")
                     if (reponse){
                         take[24] = "1"
@@ -1035,7 +1040,7 @@ function attribution(){
                     house1[24] = "wont"
                 }
                 }
-                if (player2 == 25 && money2 >= 420 && house2[24] != "wont"){
+                if (player2 == 26 && money2 >= 420 && house2[24] != "wont"){
                     const reponse = confirm("player 2, do you want to buy tokyo?")
                     if (reponse){
                         take[24] = "2"
@@ -1044,7 +1049,7 @@ function attribution(){
                         house2[24] = "wont"
                     }
                 }
-                if (player3 == 25 && money3 >= 420 && house3[24] != "wont"){
+                if (player3 == 26 && money3 >= 420 && house3[24] != "wont"){
                     const reponse = confirm("player 3, do you want to buy tokyo?")
                     if (reponse){
                         money3 -= 420
@@ -1053,7 +1058,7 @@ function attribution(){
                         house3[24] = "wont"
                     }
                 }
-                if (player4 == 25 && money4 >= 420 && house4[24] != "wont"){
+                if (player4 == 26 && money4 >= 420 && house4[24] != "wont"){
                     const reponse = confirm("player 4, do you want to buy tokyo?")
                     if (reponse){
                         take[24] = "4"
@@ -1067,7 +1072,7 @@ function attribution(){
 
         function newyorkb(){
             if (take[25] == null){
-                if (player1 == 26 && money1 >= 450 && house1[25] != "wont"){
+                if (player1 == 27 && money1 >= 450 && house1[25] != "wont"){
                     const reponse = confirm("player 1, do you want to buy new york?")
                     if (reponse){
                         take[25] = "1"
@@ -1076,7 +1081,7 @@ function attribution(){
                     house1[25] = "wont"
                 }
                 }
-                if (player2 == 26 && money2 >= 450 && house2[25] != "wont"){
+                if (player2 == 27 && money2 >= 450 && house2[25] != "wont"){
                     const reponse = confirm("player 2, do you want to buy new york?")
                     if (reponse){
                         take[25] = "2"
@@ -1085,7 +1090,7 @@ function attribution(){
                         house2[25] = "wont"
                     }
                 }
-                if (player3 == 26 && money3 >= 450 && house3[25] != "wont"){
+                if (player3 == 27 && money3 >= 450 && house3[25] != "wont"){
                     const reponse = confirm("player 3, do you want to buy new york?")
                     if (reponse){
                         money3 -= 450
@@ -1094,7 +1099,7 @@ function attribution(){
                         house3[25] = "wont"
                     }
                 }
-                if (player4 == 26 && money4 >= 450 && house4[25] != "wont"){
+                if (player4 == 27 && money4 >= 450 && house4[25] != "wont"){
                     const reponse = confirm("player 4, do you want to buy new york?")
                     if (reponse){
                         take[25] = "4"
@@ -1686,1612 +1691,1617 @@ function attribution(){
     }
     function dehlip(){
         if (take[1] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=dehl
-                money2 -=dehl
-                p2paid[0] = "paid"
+            if (player2 == 2 && p2paid[1] != "paid"){
+                money1 += dehl
+                money2 -= dehl
+                p2paid[1] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=dehl
-                money3 -=dehl
-                p3paid[0] = "paid"
+            if (player3 == 2 && p3paid[1] != "paid"){
+                money1 += dehl
+                money3 -= dehl
+                p3paid[1] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=dehl
-                money4 -=dehl
-                p4paid[0] = "paid"
+            if (player4 == 2 && p4paid[1] != "paid"){
+                money1 += dehl
+                money4 -= dehl
+                p4paid[1] = "paid"
             }
         }
         if (take[1] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=dehl
-                money2 +=dehl
-                p1paid[0] = "paid"
+            if (player1 == 2 && p1paid[1] != "paid"){
+                money1 -= dehl
+                money2 += dehl
+                p1paid[1] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=dehl
-                money3 -=dehl
-                p3paid[0] = "paid"
+            if (player3 == 2 && p3paid[1] != "paid"){
+                money2 += dehl
+                money3 -= dehl
+                p3paid[1] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=dehl
-                money4 -=dehl
-                p4paid[0] = "paid"
+            if (player4 == 2 && p4paid[1] != "paid"){
+                money2 += dehl
+                money4 -= dehl
+                p4paid[1] = "paid"
             }
         }
         if (take[1] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=dehl
-                money3 +=dehl
-                p1paid[0] = "paid"
+            if (player1 == 2 && p1paid[1] != "paid"){
+                money1 -= dehl
+                money3 += dehl
+                p1paid[1] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=dehl
-                money2 -=dehl
-                p2paid[0] = "paid"
+            if (player2 == 2 && p2paid[1] != "paid"){
+                money3 += dehl
+                money2 -= dehl
+                p2paid[1] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=dehl
-                money4 -=dehl
-                p4paid[0] = "paid"
+            if (player4 == 2 && p4paid[1] != "paid"){
+                money3 += dehl
+                money4 -= dehl
+                p4paid[1] = "paid"
             }
         }
         if (take[1] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=dehl
-                money4 +=dehl
-                p1paid[0] = "paid"
+            if (player1 == 2 && p1paid[1] != "paid"){
+                money1 -= dehl
+                money4 += dehl
+                p1paid[1] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=dehl
-                money2 -=dehl
-                p2paid[0] = "paid"
+            if (player2 == 2 && p2paid[1] != "paid"){
+                money4 += dehl
+                money2 -= dehl
+                p2paid[1] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=dehl
-                money3 -=dehl
-                p3paid[0] = "paid"
+            if (player4 == 2 && p4paid[1] != "paid"){
+                money4 += dehl
+                money3 -= dehl
+                p4paid[1] = "paid"
             }
         }
     }
     function bangp(){
         if (take[2] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=bang
-                money2 -=bang
-                p2paid[0] = "paid"
+            if (player2 == 3 && p2paid[2] != "paid"){
+                money1 += bang
+                money2 -= bang
+                p2paid[2] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=bang
-                money3 -=bang
-                p3paid[0] = "paid"
+            if (player3 == 3 && p3paid[2] != "paid"){
+                money1 += bang
+                money3 -= bang
+                p3paid[2] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=bang
-                money4 -=bang
-                p4paid[0] = "paid"
+            if (player4 == 3 && p4paid[2] != "paid"){
+                money1 += bang
+                money4 -= bang
+                p4paid[2] = "paid"
             }
         }
         if (take[2] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=bang
-                money2 +=bang
-                p1paid[0] = "paid"
+            if (player1 == 3 && p1paid[2] != "paid"){
+                money1 -= bang
+                money2 += bang
+                p1paid[2] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=bang
-                money3 -=bang
-                p3paid[0] = "paid"
+            if (player3 == 3 && p3paid[2] != "paid"){
+                money2 += bang
+                money3 -= bang
+                p3paid[2] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=bang
-                money4 -=bang
-                p4paid[0] = "paid"
+            if (player4 == 3 && p4paid[2] != "paid"){
+                money2 += bang
+                money4 -= bang
+                p4paid[2] = "paid"
             }
         }
         if (take[2] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=bang
-                money3 +=bang
-                p1paid[0] = "paid"
+            if (player1 == 3 && p1paid[2] != "paid"){
+                money1 -= bang
+                money3 += bang
+                p1paid[2] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=bang
-                money2 -=bang
-                p2paid[0] = "paid"
+            if (player2 == 3 && p2paid[2] != "paid"){
+                money3 += bang
+                money2 -= bang
+                p2paid[2] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=bang
-                money4 -=bang
-                p4paid[0] = "paid"
+            if (player4 == 3 && p4paid[2] != "paid"){
+                money3 += bang
+                money4 -= bang
+                p4paid[2] = "paid"
             }
         }
         if (take[2] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=bang
-                money4 +=bang
-                p1paid[0] = "paid"
+            if (player1 == 3 && p1paid[2] != "paid"){
+                money1 -= bang
+                money4 += bang
+                p1paid[2] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=bang
-                money2 -=bang
-                p2paid[0] = "paid"
+            if (player2 == 3 && p2paid[2] != "paid"){
+                money4 += bang
+                money2 -= bang
+                p2paid[2] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=bang
-                money3 -=bang
-                p3paid[0] = "paid"
+            if (player4 == 3 && p4paid[2] != "paid"){
+                money4 += bang
+                money3 -= bang
+                p4paid[2] = "paid"
             }
         }
     }
     function harbp(){
         if (take[3] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=harb
-                money2 -=harb
-                p2paid[0] = "paid"
+            if (player2 == 4 && p2paid[3] != "paid"){
+                money1 += harb
+                money2 -= harb
+                p2paid[3] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=harb
-                money3 -=harb
-                p3paid[0] = "paid"
+            if (player3 == 4 && p3paid[3] != "paid"){
+                money1 += harb
+                money3 -= harb
+                p3paid[3] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=harb
-                money4 -=harb
-                p4paid[0] = "paid"
+            if (player4 == 4 && p4paid[3] != "paid"){
+                money1 += harb
+                money4 -= harb
+                p4paid[3] = "paid"
             }
         }
         if (take[3] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=harb
-                money2 +=harb
-                p1paid[0] = "paid"
+            if (player1 == 4 && p1paid[3] != "paid"){
+                money1 -= harb
+                money2 += harb
+                p1paid[3] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=harb
-                money3 -=harb
-                p3paid[0] = "paid"
+            if (player3 == 4 && p3paid[3] != "paid"){
+                money2 += harb
+                money3 -= harb
+                p3paid[3] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=harb
-                money4 -=harb
-                p4paid[0] = "paid"
+            if (player4 == 4 && p4paid[3] != "paid"){
+                money2 += harb
+                money4 -= harb
+                p4paid[3] = "paid"
             }
         }
         if (take[3] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=harb
-                money3 +=harb
-                p1paid[0] = "paid"
+            if (player1 == 4 && p1paid[3] != "paid"){
+                money1 -= harb
+                money3 += harb
+                p1paid[3] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=harb
-                money2 -=harb
-                p2paid[0] = "paid"
+            if (player2 == 4 && p2paid[3] != "paid"){
+                money3 += harb
+                money2 -= harb
+                p2paid[3] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=harb
-                money4 -=harb
-                p4paid[0] = "paid"
+            if (player4 == 4 && p4paid[3] != "paid"){
+                money3 += harb
+                money4 -= harb
+                p4paid[3] = "paid"
             }
         }
         if (take[3] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=harb
-                money4 +=harb
-                p1paid[0] = "paid"
+            if (player1 == 4 && p1paid[3] != "paid"){
+                money1 -= harb
+                money4 += harb
+                p1paid[3] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=harb
-                money2 -=harb
-                p2paid[0] = "paid"
+            if (player2 == 4 && p2paid[3] != "paid"){
+                money4 += harb
+                money2 -= harb
+                p2paid[3] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=harb
-                money3 -=harb
-                p3paid[0] = "paid"
+            if (player4 == 4 && p4paid[3] != "paid"){
+                money4 += harb
+                money3 -= harb
+                p4paid[3] = "paid"
             }
         }
     }
     function cairp(){
         if (take[4] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=cair
-                money2 -=cair
-                p2paid[0] = "paid"
+            if (player2 == 5 && p2paid[4] != "paid"){
+                money1 += cair
+                money2 -= cair
+                p2paid[4] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=cair
-                money3 -=cair
-                p3paid[0] = "paid"
+            if (player3 == 5 && p3paid[4] != "paid"){
+                money1 += cair
+                money3 -= cair
+                p3paid[4] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=cair
-                money4 -=cair
-                p4paid[0] = "paid"
+            if (player4 == 5 && p4paid[4] != "paid"){
+                money1 += cair
+                money4 -= cair
+                p4paid[4] = "paid"
             }
         }
         if (take[4] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=cair
-                money2 +=cair
-                p1paid[0] = "paid"
+            if (player1 == 5 && p1paid[4] != "paid"){
+                money1 -= cair
+                money2 += cair
+                p1paid[4] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=cair
-                money3 -=cair
-                p3paid[0] = "paid"
+            if (player3 == 5 && p3paid[4] != "paid"){
+                money2 += cair
+                money3 -= cair
+                p3paid[4] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=cair
-                money4 -=cair
-                p4paid[0] = "paid"
+            if (player4 == 5 && p4paid[4] != "paid"){
+                money2 += cair
+                money4 -= cair
+                p4paid[4] = "paid"
             }
         }
         if (take[4] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=cair
-                money3 +=cair
-                p1paid[0] = "paid"
+            if (player1 == 5 && p1paid[4] != "paid"){
+                money1 -= cair
+                money3 += cair
+                p1paid[4] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=cair
-                money2 -=cair
-                p2paid[0] = "paid"
+            if (player2 == 5 && p2paid[4] != "paid"){
+                money3 += cair
+                money2 -= cair
+                p2paid[4] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=cair
-                money4 -=cair
-                p4paid[0] = "paid"
+            if (player4 == 5 && p4paid[4] != "paid"){
+                money3 += cair
+                money4 -= cair
+                p4paid[4] = "paid"
             }
         }
         if (take[4] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=cair
-                money4 +=cair
-                p1paid[0] = "paid"
+            if (player1 == 5 && p1paid[4] != "paid"){
+                money1 -= cair
+                money4 += cair
+                p1paid[4] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=cair
-                money2 -=cair
-                p2paid[0] = "paid"
+            if (player2 == 5 && p2paid[4] != "paid"){
+                money4 += cair
+                money2 -= cair
+                p2paid[4] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=cair
-                money3 -=cair
-                p3paid[0] = "paid"
+            if (player4 == 5 && p4paid[4] != "paid"){
+                money4 += cair
+                money3 -= cair
+                p4paid[4] = "paid"
             }
         }
     }
     function madrp(){
         if (take[5] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=madr
-                money2 -=madr
-                p2paid[0] = "paid"
+            if (player2 == 6 && p2paid[5] != "paid"){
+                money1 += madr
+                money2 -= madr
+                p2paid[5] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=madr
-                money3 -=madr
-                p3paid[0] = "paid"
+            if (player3 == 6 && p3paid[5] != "paid"){
+                money1 += madr
+                money3 -= madr
+                p3paid[5] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=madr
-                money4 -=madr
-                p4paid[0] = "paid"
+            if (player4 == 6 && p4paid[5] != "paid"){
+                money1 += madr
+                money4 -= madr
+                p4paid[5] = "paid"
             }
         }
         if (take[5] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=madr
-                money2 +=madr
-                p1paid[0] = "paid"
+            if (player1 == 6 && p1paid[5] != "paid"){
+                money1 -= madr
+                money2 += madr
+                p1paid[5] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=madr
-                money3 -=madr
-                p3paid[0] = "paid"
+            if (player3 == 6 && p3paid[5] != "paid"){
+                money2 += madr
+                money3 -= madr
+                p3paid[5] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=madr
-                money4 -=madr
-                p4paid[0] = "paid"
+            if (player4 == 6 && p4paid[5] != "paid"){
+                money2 += madr
+                money4 -= madr
+                p4paid[5] = "paid"
             }
         }
         if (take[5] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=madr
-                money3 +=madr
-                p1paid[0] = "paid"
+            if (player1 == 6 && p1paid[5] != "paid"){
+                money1 -= madr
+                money3 += madr
+                p1paid[5] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=madr
-                money2 -=madr
-                p2paid[0] = "paid"
+            if (player2 == 6 && p2paid[5] != "paid"){
+                money3 += madr
+                money2 -= madr
+                p2paid[5] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=madr
-                money4 -=madr
-                p4paid[0] = "paid"
+            if (player4 == 6 && p4paid[5] != "paid"){
+                money3 += madr
+                money4 -= madr
+                p4paid[5] = "paid"
             }
         }
         if (take[5] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=madr
-                money4 +=madr
-                p1paid[0] = "paid"
+            if (player1 == 6 && p1paid[5] != "paid"){
+                money1 -= madr
+                money4 += madr
+                p1paid[5] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=madr
-                money2 -=madr
-                p2paid[0] = "paid"
+            if (player2 == 6 && p2paid[5] != "paid"){
+                money4 += madr
+                money2 -= madr
+                p2paid[5] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=madr
-                money3 -=madr
-                p3paid[0] = "paid"
+            if (player4 == 6 && p4paid[5] != "paid"){
+                money4 += madr
+                money3 -= madr
+                p4paid[5] = "paid"
             }
         }
     }
     function jakp(){
         if (take[7] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=jak
-                money2 -=jak
-                p2paid[0] = "paid"
+            if (player2 == 8 && p2paid[7] != "paid"){
+                money1 += jak
+                money2 -= jak
+                p2paid[7] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=jak
-                money3 -=jak
-                p3paid[0] = "paid"
+            if (player3 == 8 && p3paid[7] != "paid"){
+                money1 += jak
+                money3 -= jak
+                p3paid[7] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=jak
-                money4 -=jak
-                p4paid[0] = "paid"
+            if (player4 == 8 && p4paid[7] != "paid"){
+                money1 += jak
+                money4 -= jak
+                p4paid[7] = "paid"
             }
         }
         if (take[7] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=jak
-                money2 +=jak
-                p1paid[0] = "paid"
+            if (player1 == 8 && p1paid[7] != "paid"){
+                money1 -= jak
+                money2 += jak
+                p1paid[7] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=jak
-                money3 -=jak
-                p3paid[0] = "paid"
+            if (player3 == 8 && p3paid[7] != "paid"){
+                money2 += jak
+                money3 -= jak
+                p3paid[7] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=jak
-                money4 -=jak
-                p4paid[0] = "paid"
+            if (player4 == 8 && p4paid[7] != "paid"){
+                money2 += jak
+                money4 -= jak
+                p4paid[7] = "paid"
             }
         }
         if (take[7] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=jak
-                money3 +=jak
-                p1paid[0] = "paid"
+            if (player1 == 8 && p1paid[7] != "paid"){
+                money1 -= jak
+                money3 += jak
+                p1paid[7] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=jak
-                money2 -=jak
-                p2paid[0] = "paid"
+            if (player2 == 8 && p2paid[7] != "paid"){
+                money3 += jak
+                money2 -= jak
+                p2paid[7] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=jak
-                money4 -=jak
-                p4paid[0] = "paid"
+            if (player4 == 8 && p4paid[7] != "paid"){
+                money3 += jak
+                money4 -= jak
+                p4paid[7] = "paid"
             }
         }
         if (take[7] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=jak
-                money4 +=jak
-                p1paid[0] = "paid"
+            if (player1 == 8 && p1paid[7] != "paid"){
+                money1 -= jak
+                money4 += jak
+                p1paid[7] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=jak
-                money2 -=jak
-                p2paid[0] = "paid"
+            if (player2 == 8 && p2paid[7] != "paid"){
+                money4 += jak
+                money2 -= jak
+                p2paid[7] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=jak
-                money3 -=jak
-                p3paid[0] = "paid"
+            if (player4 == 8 && p4paid[7] != "paid"){
+                money4 += jak
+                money3 -= jak
+                p4paid[7] = "paid"
             }
         }
     }
     function berp(){
         if (take[8] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=ber
-                money2 -=ber
-                p2paid[0] = "paid"
+            if (player2 == 9 && p2paid[8] != "paid"){
+                money1 += ber
+                money2 -= ber
+                p2paid[8] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=ber
-                money3 -=ber
-                p3paid[0] = "paid"
+            if (player3 == 9 && p3paid[8] != "paid"){
+                money1 += ber
+                money3 -= ber
+                p3paid[8] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=ber
-                money4 -=ber
-                p4paid[0] = "paid"
+            if (player4 == 9 && p4paid[8] != "paid"){
+                money1 += ber
+                money4 -= ber
+                p4paid[8] = "paid"
             }
         }
         if (take[8] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=ber
-                money2 +=ber
-                p1paid[0] = "paid"
+            if (player1 == 9 && p1paid[8] != "paid"){
+                money1 -= ber
+                money2 += ber
+                p1paid[8] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=ber
-                money3 -=ber
-                p3paid[0] = "paid"
+            if (player3 == 9 && p3paid[8] != "paid"){
+                money2 += ber
+                money3 -= ber
+                p3paid[8] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=ber
-                money4 -=ber
-                p4paid[0] = "paid"
+            if (player4 == 9 && p4paid[8] != "paid"){
+                money2 += ber
+                money4 -= ber
+                p4paid[8] = "paid"
             }
         }
         if (take[8] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=ber
-                money3 +=ber
-                p1paid[0] = "paid"
+            if (player1 == 9 && p1paid[8] != "paid"){
+                money1 -= ber
+                money3 += ber
+                p1paid[8] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=ber
-                money2 -=ber
-                p2paid[0] = "paid"
+            if (player2 == 9 && p2paid[8] != "paid"){
+                money3 += ber
+                money2 -= ber
+                p2paid[8] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=ber
-                money4 -=ber
-                p4paid[0] = "paid"
+            if (player4 == 9 && p4paid[8] != "paid"){
+                money3 += ber
+                money4 -= ber
+                p4paid[8] = "paid"
             }
         }
         if (take[8] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=ber
-                money4 +=ber
-                p1paid[0] = "paid"
+            if (player1 == 9 && p1paid[8] != "paid"){
+                money1 -= ber
+                money4 += ber
+                p1paid[8] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=ber
-                money2 -=ber
-                p2paid[0] = "paid"
+            if (player2 == 9 && p2paid[8] != "paid"){
+                money4 += ber
+                money2 -= ber
+                p2paid[8] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=ber
-                money3 -=ber
-                p3paid[0] = "paid"
+            if (player4 == 9 && p4paid[8] != "paid"){
+                money4 += ber
+                money3 -= ber
+                p4paid[8] = "paid"
             }
         }
     }
     function mosp(){
-        if (take[0] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=mos
-                money2 -=mos
-                p2paid[0] = "paid"
+        if (take[9] == "1"){
+            if (player2 == 10 && p2paid[9] != "paid"){
+                money1 += mos
+                money2 -= mos
+                p2paid[9] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=mos
-                money3 -=mos
-                p3paid[0] = "paid"
+            if (player3 == 10 && p3paid[9] != "paid"){
+                money1 += mos
+                money3 -= mos
+                p3paid[9] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=mos
-                money4 -=mos
-                p4paid[0] = "paid"
-            }
-        }
-        if (take[0] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=mos
-                money2 +=mos
-                p1paid[0] = "paid"
-            }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=mos
-                money3 -=mos
-                p3paid[0] = "paid"
-            }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=mos
-                money4 -=mos
-                p4paid[0] = "paid"
+            if (player4 == 10 && p4paid[9] != "paid"){
+                money1 += mos
+                money4 -= mos
+                p4paid[9] = "paid"
             }
         }
-        if (take[0] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=mos
-                money3 +=mos
-                p1paid[0] = "paid"
+        if (take[9] == "2"){
+            if (player1 == 10 && p1paid[9] != "paid"){
+                money1 -= mos
+                money2 += mos
+                p1paid[9] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=mos
-                money2 -=mos
-                p2paid[0] = "paid"
+            if (player3 == 10 && p3paid[9] != "paid"){
+                money2 += mos
+                money3 -= mos
+                p3paid[9] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=mos
-                money4 -=mos
-                p4paid[0] = "paid"
+            if (player4 == 10 && p4paid[9] != "paid"){
+                money2 += mos
+                money4 -= mos
+                p4paid[9] = "paid"
             }
         }
-        if (take[0] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=mos
-                money4 +=mos
-                p1paid[0] = "paid"
+        if (take[9] == "3"){
+            if (player1 == 10 && p1paid[9] != "paid"){
+                money1 -= mos
+                money3 += mos
+                p1paid[9] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=mos
-                money2 -=mos
-                p2paid[0] = "paid"
+            if (player2 == 10 && p2paid[9] != "paid"){
+                money3 += mos
+                money2 -= mos
+                p2paid[9] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=mos
-                money3 -=mos
-                p3paid[0] = "paid"
+            if (player4 == 10 && p4paid[9] != "paid"){
+                money3 += mos
+                money4 -= mos
+                p4paid[9] = "paid"
+            }
+        }
+        if (take[9] == "4"){
+            if (player1 == 10 && p1paid[9] != "paid"){
+                money1 -= mos
+                money4 += mos
+                p1paid[9] = "paid"
+            }
+            if (player2 == 10 && p2paid[9] != "paid"){
+                money4 += mos
+                money2 -= mos
+                p2paid[9] = "paid"
+            }
+            if (player4 == 10 && p4paid[9] != "paid"){
+                money4 += mos
+                money3 -= mos
+                p4paid[9] = "paid"
             }
         }
     }
     function railp(){
-        if (take[0] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=rail
-                money2 -=rail
-                p2paid[0] = "paid"
+        if (take[10] == "1"){
+            if (player2 == 11 && p2paid[10] != "paid"){
+                money1 += rail
+                money2 -= rail
+                p2paid[10] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=rail
-                money3 -=rail
-                p3paid[0] = "paid"
+            if (player3 == 11 && p3paid[10] != "paid"){
+                money1 += rail
+                money3 -= rail
+                p3paid[10] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=rail
-                money4 -=rail
-                p4paid[0] = "paid"
-            }
-        }
-        if (take[0] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=rail
-                money2 +=rail
-                p1paid[0] = "paid"
-            }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=rail
-                money3 -=rail
-                p3paid[0] = "paid"
-            }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=rail
-                money4 -=rail
-                p4paid[0] = "paid"
+            if (player4 == 11 && p4paid[10] != "paid"){
+                money1 += rail
+                money4 -= rail
+                p4paid[10] = "paid"
             }
         }
-        if (take[0] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=rail
-                money3 +=rail
-                p1paid[0] = "paid"
+        if (take[10] == "2"){
+            if (player1 == 11 && p1paid[10] != "paid"){
+                money1 -= rail
+                money2 += rail
+                p1paid[10] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=rail
-                money2 -=rail
-                p2paid[0] = "paid"
+            if (player3 == 11 && p3paid[10] != "paid"){
+                money2 += rail
+                money3 -= rail
+                p3paid[10] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=rail
-                money4 -=rail
-                p4paid[0] = "paid"
+            if (player4 == 11 && p4paid[10] != "paid"){
+                money2 += rail
+                money4 -= rail
+                p4paid[10] = "paid"
             }
         }
-        if (take[0] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=rail
-                money4 +=rail
-                p1paid[0] = "paid"
+        if (take[10] == "3"){
+            if (player1 == 11 && p1paid[10] != "paid"){
+                money1 -= rail
+                money3 += rail
+                p1paid[10] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=rail
-                money2 -=rail
-                p2paid[0] = "paid"
+            if (player2 == 11 && p2paid[10] != "paid"){
+                money3 += rail
+                money2 -= rail
+                p2paid[10] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=rail
-                money3 -=rail
-                p3paid[0] = "paid"
+            if (player4 == 11 && p4paid[10] != "paid"){
+                money3 += rail
+                money4 -= rail
+                p4paid[10] = "paid"
+            }
+        }
+        if (take[10] == "4"){
+            if (player1 == 11 && p1paid[10] != "paid"){
+                money1 -= rail
+                money4 += rail
+                p1paid[10] = "paid"
+            }
+            if (player2 == 11 && p2paid[10] != "paid"){
+                money4 += rail
+                money2 -= rail
+                p2paid[10] = "paid"
+            }
+            if (player4 == 11 && p4paid[10] != "paid"){
+                money4 += rail
+                money3 -= rail
+                p4paid[10] = "paid"
             }
         }
     }
     function torop(){
-        if (take[0] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=toro
-                money2 -=toro
-                p2paid[0] = "paid"
+        if (take[11] == "1"){
+            if (player2 == 12 && p2paid[11] != "paid"){
+                money1 += toro
+                money2 -= toro
+                p2paid[11] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=toro
-                money3 -=toro
-                p3paid[0] = "paid"
+            if (player3 == 12 && p3paid[11] != "paid"){
+                money1 += toro
+                money3 -= toro
+                p3paid[11] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=toro
-                money4 -=toro
-                p4paid[0] = "paid"
-            }
-        }
-        if (take[0] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=toro
-                money2 +=toro
-                p1paid[0] = "paid"
-            }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=toro
-                money3 -=toro
-                p3paid[0] = "paid"
-            }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=toro
-                money4 -=toro
-                p4paid[0] = "paid"
+            if (player4 == 12 && p4paid[11] != "paid"){
+                money1 += toro
+                money4 -= toro
+                p4paid[11] = "paid"
             }
         }
-        if (take[0] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=toro
-                money3 +=toro
-                p1paid[0] = "paid"
+        if (take[11] == "2"){
+            if (player1 == 12 && p1paid[11] != "paid"){
+                money1 -= toro
+                money2 += toro
+                p1paid[11] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=toro
-                money2 -=toro
-                p2paid[0] = "paid"
+            if (player3 == 12 && p3paid[11] != "paid"){
+                money2 += toro
+                money3 -= toro
+                p3paid[11] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=toro
-                money4 -=toro
-                p4paid[0] = "paid"
+            if (player4 == 12 && p4paid[11] != "paid"){
+                money2 += toro
+                money4 -= toro
+                p4paid[11] = "paid"
             }
         }
-        if (take[0] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=toro
-                money4 +=toro
-                p1paid[0] = "paid"
+        if (take[11] == "3"){
+            if (player1 == 12 && p1paid[11] != "paid"){
+                money1 -= toro
+                money3 += toro
+                p1paid[11] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=toro
-                money2 -=toro
-                p2paid[0] = "paid"
+            if (player2 == 12 && p2paid[11] != "paid"){
+                money3 += toro
+                money2 -= toro
+                p2paid[11] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=toro
-                money3 -=toro
-                p3paid[0] = "paid"
+            if (player4 == 12 && p4paid[11] != "paid"){
+                money3 += toro
+                money4 -= toro
+                p4paid[11] = "paid"
+            }
+        }
+        if (take[11] == "4"){
+            if (player1 == 12 && p1paid[11] != "paid"){
+                money1 -= toro
+                money4 += toro
+                p1paid[11] = "paid"
+            }
+            if (player2 == 12 && p2paid[11] != "paid"){
+                money4 += toro
+                money2 -= toro
+                p2paid[11] = "paid"
+            }
+            if (player4 == 12 && p4paid[11] != "paid"){
+                money4 += toro
+                money3 -= toro
+                p4paid[11] = "paid"
             }
         }
     }
     function selp(){
-        if (take[0] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=sel
-                money2 -=sel
-                p2paid[0] = "paid"
+        if (take[12] == "1"){
+            if (player2 == 13 && p2paid[12] != "paid"){
+                money1 += sel
+                money2 -= sel
+                p2paid[12] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=sel
-                money3 -=sel
-                p3paid[0] = "paid"
+            if (player3 == 13 && p3paid[12] != "paid"){
+                money1 += sel
+                money3 -= sel
+                p3paid[12] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=sel
-                money4 -=sel
-                p4paid[0] = "paid"
-            }
-        }
-        if (take[0] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=sel
-                money2 +=sel
-                p1paid[0] = "paid"
-            }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=sel
-                money3 -=sel
-                p3paid[0] = "paid"
-            }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=sel
-                money4 -=sel
-                p4paid[0] = "paid"
+            if (player4 == 13 && p4paid[12] != "paid"){
+                money1 += sel
+                money4 -= sel
+                p4paid[12] = "paid"
             }
         }
-        if (take[0] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=sel
-                money3 +=sel
-                p1paid[0] = "paid"
+        if (take[12] == "2"){
+            if (player1 == 13 && p1paid[12] != "paid"){
+                money1 -= sel
+                money2 += sel
+                p1paid[12] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=sel
-                money2 -=sel
-                p2paid[0] = "paid"
+            if (player3 == 13 && p3paid[12] != "paid"){
+                money2 += sel
+                money3 -= sel
+                p3paid[12] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=sel
-                money4 -=sel
-                p4paid[0] = "paid"
+            if (player4 == 13 && p4paid[12] != "paid"){
+                money2 += sel
+                money4 -= sel
+                p4paid[12] = "paid"
             }
         }
-        if (take[0] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=sel
-                money4 +=sel
-                p1paid[0] = "paid"
+        if (take[12] == "3"){
+            if (player1 == 13 && p1paid[12] != "paid"){
+                money1 -= sel
+                money3 += sel
+                p1paid[12] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=sel
-                money2 -=sel
-                p2paid[0] = "paid"
+            if (player2 == 13 && p2paid[12] != "paid"){
+                money3 += sel
+                money2 -= sel
+                p2paid[12] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=sel
-                money3 -=sel
-                p3paid[0] = "paid"
+            if (player4 == 13 && p4paid[12] != "paid"){
+                money3 += sel
+                money4 -= sel
+                p4paid[12] = "paid"
+            }
+        }
+        if (take[12] == "4"){
+            if (player1 == 13 && p1paid[12] != "paid"){
+                money1 -= sel
+                money4 += sel
+                p1paid[12] = "paid"
+            }
+            if (player2 == 13 && p2paid[12] != "paid"){
+                money4 += sel
+                money2 -= sel
+                p2paid[12] = "paid"
+            }
+            if (player4 == 13 && p4paid[12] != "paid"){
+                money4 += sel
+                money3 -= sel
+                p4paid[12] = "paid"
             }
         }
     }
     function zerp(){
-        if (take[0] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=zer
-                money2 -=zer
-                p2paid[0] = "paid"
+        if (take[13] == "1"){
+            if (player2 == 15 && p2paid[13] != "paid"){
+                money1 += zer
+                money2 -= zer
+                p2paid[13] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=zer
-                money3 -=zer
-                p3paid[0] = "paid"
+            if (player3 == 15 && p3paid[13] != "paid"){
+                money1 += zer
+                money3 -= zer
+                p3paid[13] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=zer
-                money4 -=zer
-                p4paid[0] = "paid"
-            }
-        }
-        if (take[0] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=zer
-                money2 +=zer
-                p1paid[0] = "paid"
-            }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=zer
-                money3 -=zer
-                p3paid[0] = "paid"
-            }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=zer
-                money4 -=zer
-                p4paid[0] = "paid"
+            if (player4 == 15 && p4paid[12] != "paid"){
+                money1 += zer
+                money4 -= zer
+                p4paid[12] = "paid"
             }
         }
-        if (take[0] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=zer
-                money3 +=zer
-                p1paid[0] = "paid"
+        if (take[13] == "2"){
+            if (player1 == 15 && p1paid[13] != "paid"){
+                money1 -= zer
+                money2 += zer
+                p1paid[13] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=zer
-                money2 -=zer
-                p2paid[0] = "paid"
+            if (player3 == 15 && p3paid[13] != "paid"){
+                money2 += zer
+                money3 -= zer
+                p3paid[13] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=zer
-                money4 -=zer
-                p4paid[0] = "paid"
+            if (player4 == 15 && p4paid[13] != "paid"){
+                money2 += zer
+                money4 -= zer
+                p4paid[13] = "paid"
             }
         }
-        if (take[0] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=zer
-                money4 +=zer
-                p1paid[0] = "paid"
+        if (take[13] == "3"){
+            if (player1 == 15 && p1paid[13] != "paid"){
+                money1 -= zer
+                money3 += zer
+                p1paid[13] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=zer
-                money2 -=zer
-                p2paid[0] = "paid"
+            if (player2 == 15 && p2paid[13] != "paid"){
+                money3 += zer
+                money2 -= zer
+                p2paid[13] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=zer
-                money3 -=zer
-                p3paid[0] = "paid"
+            if (player4 == 15 && p4paid[13] != "paid"){
+                money3 += zer
+                money4 -= zer
+                p4paid[13] = "paid"
+            }
+        }
+        if (take[13] == "4"){
+            if (player1 == 15 && p1paid[13] != "paid"){
+                money1 -= zer
+                money4 += zer
+                p1paid[13] = "paid"
+            }
+            if (player2 == 15 && p2paid[13] != "paid"){
+                money4 += zer
+                money2 -= zer
+                p2paid[13] = "paid"
+            }
+            if (player4 == 15 && p4paid[13] != "paid"){
+                money4 += zer
+                money3 -= zer
+                p4paid[13] = "paid"
             }
         }
     }
     function riyp(){
-        if (take[0] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=riy
-                money2 -=riy
-                p2paid[0] = "paid"
+        if (take[14] == "1"){
+            if (player2 == 16 && p2paid[14] != "paid"){
+                money1 += riy
+                money2 -= riy
+                p2paid[14] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=riy
-                money3 -=riy
-                p3paid[0] = "paid"
+            if (player3 == 16 && p3paid[14] != "paid"){
+                money1 += riy
+                money3 -= riy
+                p3paid[14] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=riy
-                money4 -=riy
-                p4paid[0] = "paid"
-            }
-        }
-        if (take[0] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=riy
-                money2 +=riy
-                p1paid[0] = "paid"
-            }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=riy
-                money3 -=riy
-                p3paid[0] = "paid"
-            }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=riy
-                money4 -=riy
-                p4paid[0] = "paid"
+            if (player4 == 16 && p4paid[14] != "paid"){
+                money1 += riy
+                money4 -= riy
+                p4paid[14] = "paid"
             }
         }
-        if (take[0] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=riy
-                money3 +=riy
-                p1paid[0] = "paid"
+        if (take[14] == "2"){
+            if (player1 == 16 && p1paid[14] != "paid"){
+                money1 -= riy
+                money2 += riy
+                p1paid[14] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=riy
-                money2 -=riy
-                p2paid[0] = "paid"
+            if (player3 == 16 && p3paid[14] != "paid"){
+                money2 += riy
+                money3 -= riy
+                p3paid[14] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=riy
-                money4 -=riy
-                p4paid[0] = "paid"
+            if (player4 == 16 && p4paid[14] != "paid"){
+                money2 += riy
+                money4 -= riy
+                p4paid[14] = "paid"
             }
         }
-        if (take[0] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=riy
-                money4 +=riy
-                p1paid[0] = "paid"
+        if (take[14] == "3"){
+            if (player1 == 16 && p1paid[14] != "paid"){
+                money1 -= riy
+                money3 += riy
+                p1paid[14] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=riy
-                money2 -=riy
-                p2paid[0] = "paid"
+            if (player2 == 16 && p2paid[14] != "paid"){
+                money3 += riy
+                money2 -= riy
+                p2paid[14] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=riy
-                money3 -=riy
-                p3paid[0] = "paid"
+            if (player4 == 16 && p4paid[14] != "paid"){
+                money3 += riy
+                money4 -= riy
+                p4paid[14] = "paid"
+            }
+        }
+        if (take[14] == "4"){
+            if (player1 == 16 && p1paid[14] != "paid"){
+                money1 -= riy
+                money4 += riy
+                p1paid[14] = "paid"
+            }
+            if (player2 == 16 && p2paid[14] != "paid"){
+                money4 += riy
+                money2 -= riy
+                p2paid[14] = "paid"
+            }
+            if (player4 == 16 && p4paid[14] != "paid"){
+                money4 += riy
+                money3 -= riy
+                p4paid[14] = "paid"
             }
         }
     }
     function sydp(){
-        if (take[0] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=syd
-                money2 -=syd
-                p2paid[0] = "paid"
+        if (take[15] == "1"){
+            if (player2 == 17 && p2paid[15] != "paid"){
+                money1 += syd
+                money2 -= syd
+                p2paid[15] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=syd
-                money3 -=syd
-                p3paid[0] = "paid"
+            if (player3 == 17 && p3paid[15] != "paid"){
+                money1 += syd
+                money3 -= syd
+                p3paid[15] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=syd
-                money4 -=syd
-                p4paid[0] = "paid"
-            }
-        }
-        if (take[0] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=syd
-                money2 +=syd
-                p1paid[0] = "paid"
-            }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=syd
-                money3 -=syd
-                p3paid[0] = "paid"
-            }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=syd
-                money4 -=syd
-                p4paid[0] = "paid"
+            if (player4 == 17 && p4paid[15] != "paid"){
+                money1 += syd
+                money4 -= syd
+                p4paid[15] = "paid"
             }
         }
-        if (take[0] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=syd
-                money3 +=syd
-                p1paid[0] = "paid"
+        if (take[15] == "2"){
+            if (player1 == 17 && p1paid[15] != "paid"){
+                money1 -= syd
+                money2 += syd
+                p1paid[15] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=syd
-                money2 -=syd
-                p2paid[0] = "paid"
+            if (player3 == 17 && p3paid[15] != "paid"){
+                money2 += syd
+                money3 -= syd
+                p3paid[15] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=syd
-                money4 -=syd
-                p4paid[0] = "paid"
+            if (player4 == 17 && p4paid[15] != "paid"){
+                money2 += syd
+                money4 -= syd
+                p4paid[15] = "paid"
             }
         }
-        if (take[0] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=syd
-                money4 +=syd
-                p1paid[0] = "paid"
+        if (take[15] == "3"){
+            if (player1 == 17 && p1paid[15] != "paid"){
+                money1 -= syd
+                money3 += syd
+                p1paid[15] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=syd
-                money2 -=syd
-                p2paid[0] = "paid"
+            if (player2 == 17 && p2paid[15] != "paid"){
+                money3 += syd
+                money2 -= syd
+                p2paid[15] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=syd
-                money3 -=syd
-                p3paid[0] = "paid"
+            if (player4 == 17 && p4paid[15] != "paid"){
+                money3 += syd
+                money4 -= syd
+                p4paid[15] = "paid"
+            }
+        }
+        if (take[15] == "4"){
+            if (player1 == 17 && p1paid[15] != "paid"){
+                money1 -= syd
+                money4 += syd
+                p1paid[15] = "paid"
+            }
+            if (player2 == 17 && p2paid[15] != "paid"){
+                money4 += syd
+                money2 -= syd
+                p2paid[15] = "paid"
+            }
+            if (player4 == 17 && p4paid[15] != "paid"){
+                money4 += syd
+                money3 -= syd
+                p4paid[15] = "paid"
             }
         }
     }
     function elep(){
-        if (take[0] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=ele
-                money2 -=ele
-                p2paid[0] = "paid"
+        if (take[16] == "1"){
+            if (player2 == 18 && p2paid[16] != "paid"){
+                money1 += ele
+                money2 -= ele
+                p2paid[16] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=ele
-                money3 -=ele
-                p3paid[0] = "paid"
+            if (player3 == 18 && p3paid[16] != "paid"){
+                money1 += ele
+                money3 -= ele
+                p3paid[16] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=ele
-                money4 -=ele
-                p4paid[0] = "paid"
-            }
-        }
-        if (take[0] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=ele
-                money2 +=ele
-                p1paid[0] = "paid"
-            }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=ele
-                money3 -=ele
-                p3paid[0] = "paid"
-            }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=ele
-                money4 -=ele
-                p4paid[0] = "paid"
+            if (player4 == 18 && p4paid[16] != "paid"){
+                money1 += ele
+                money4 -= ele
+                p4paid[16] = "paid"
             }
         }
-        if (take[0] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=ele
-                money3 +=ele
-                p1paid[0] = "paid"
+        if (take[16] == "2"){
+            if (player1 == 18 && p1paid[16] != "paid"){
+                money1 -= ele
+                money2 += ele
+                p1paid[16] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=ele
-                money2 -=ele
-                p2paid[0] = "paid"
+            if (player3 == 18 && p3paid[16] != "paid"){
+                money2 += ele
+                money3 -= ele
+                p3paid[16] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=ele
-                money4 -=ele
-                p4paid[0] = "paid"
+            if (player4 == 18 && p4paid[16] != "paid"){
+                money2 += ele
+                money4 -= ele
+                p4paid[16] = "paid"
             }
         }
-        if (take[0] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=ele
-                money4 +=ele
-                p1paid[0] = "paid"
+        if (take[16] == "3"){
+            if (player1 == 18 && p1paid[16] != "paid"){
+                money1 -= ele
+                money3 += ele
+                p1paid[16] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=ele
-                money2 -=ele
-                p2paid[0] = "paid"
+            if (player2 == 18 && p2paid[16] != "paid"){
+                money3 += ele
+                money2 -= ele
+                p2paid[16] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=ele
-                money3 -=ele
-                p3paid[0] = "paid"
+            if (player4 == 18 && p4paid[16] != "paid"){
+                money3 += ele
+                money4 -= ele
+                p4paid[16] = "paid"
+            }
+        }
+        if (take[16] == "4"){
+            if (player1 == 18 && p1paid[16] != "paid"){
+                money1 -= ele
+                money4 += ele
+                p1paid[16] = "paid"
+            }
+            if (player2 == 18 && p2paid[16] != "paid"){
+                money4 += ele
+                money2 -= ele
+                p2paid[16] = "paid"
+            }
+            if (player4 == 18 && p4paid[16] != "paid"){
+                money4 += ele
+                money3 -= ele
+                p4paid[16] = "paid"
             }
         }
     }
     function beijp(){
-        if (take[0] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=beij
-                money2 -=beij
-                p2paid[0] = "paid"
+        if (take[17] == "1"){
+            if (player2 == 19 && p2paid[17] != "paid"){
+                money1 += beij
+                money2 -= beij
+                p2paid[17] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=beij
-                money3 -=beij
-                p3paid[0] = "paid"
+            if (player3 == 19 && p3paid[17] != "paid"){
+                money1 += beij
+                money3 -= beij
+                p3paid[17] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=beij
-                money4 -=beij
-                p4paid[0] = "paid"
-            }
-        }
-        if (take[0] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=beij
-                money2 +=beij
-                p1paid[0] = "paid"
-            }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=beij
-                money3 -=beij
-                p3paid[0] = "paid"
-            }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=beij
-                money4 -=beij
-                p4paid[0] = "paid"
+            if (player4 == 19 && p4paid[17] != "paid"){
+                money1 += beij
+                money4 -= beij
+                p4paid[17] = "paid"
             }
         }
-        if (take[0] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=beij
-                money3 +=beij
-                p1paid[0] = "paid"
+        if (take[17] == "2"){
+            if (player1 == 19 && p1paid[17] != "paid"){
+                money1 -= beij
+                money2 += beij
+                p1paid[17] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=beij
-                money2 -=beij
-                p2paid[0] = "paid"
+            if (player3 == 19 && p3paid[17] != "paid"){
+                money2 += beij
+                money3 -= beij
+                p3paid[17] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=beij
-                money4 -=beij
-                p4paid[0] = "paid"
+            if (player4 == 19 && p4paid[17] != "paid"){
+                money2 += beij
+                money4 -= beij
+                p4paid[17] = "paid"
             }
         }
-        if (take[0] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=beij
-                money4 +=beij
-                p1paid[0] = "paid"
+        if (take[17] == "3"){
+            if (player1 == 19 && p1paid[17] != "paid"){
+                money1 -= beij
+                money3 += beij
+                p1paid[17] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=beij
-                money2 -=beij
-                p2paid[0] = "paid"
+            if (player2 == 19 && p2paid[17] != "paid"){
+                money3 += beij
+                money2 -= beij
+                p2paid[17] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=beij
-                money3 -=beij
-                p3paid[0] = "paid"
+            if (player4 == 19 && p4paid[17] != "paid"){
+                money3 += beij
+                money4 -= beij
+                p4paid[17] = "paid"
+            }
+        }
+        if (take[17] == "4"){
+            if (player1 == 19 && p1paid[17] != "paid"){
+                money1 -= beij
+                money4 += beij
+                p1paid[17] = "paid"
+            }
+            if (player2 == 19 && p2paid[17] != "paid"){
+                money4 += beij
+                money2 -= beij
+                p2paid[17] = "paid"
+            }
+            if (player4 == 19 && p4paid[17] != "paid"){
+                money4 += beij
+                money3 -= beij
+                p4paid[17] = "paid"
             }
         }
     }
     function dubp(){
-        if (take[0] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=dub
-                money2 -=dub
-                p2paid[0] = "paid"
+        if (take[18] == "1"){
+            if (player2 == 20 && p2paid[18] != "paid"){
+                money1 += dub
+                money2 -= dub
+                p2paid[18] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=dub
-                money3 -=dub
-                p3paid[0] = "paid"
+            if (player3 == 20 && p3paid[18] != "paid"){
+                money1 += dub
+                money3 -= dub
+                p3paid[18] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=dub
-                money4 -=dub
-                p4paid[0] = "paid"
-            }
-        }
-        if (take[0] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=dub
-                money2 +=dub
-                p1paid[0] = "paid"
-            }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=dub
-                money3 -=dub
-                p3paid[0] = "paid"
-            }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=dub
-                money4 -=dub
-                p4paid[0] = "paid"
+            if (player4 == 20 && p4paid[18] != "paid"){
+                money1 += dub
+                money4 -= dub
+                p4paid[18] = "paid"
             }
         }
-        if (take[0] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=dub
-                money3 +=dub
-                p1paid[0] = "paid"
+        if (take[18] == "2"){
+            if (player1 == 20 && p1paid[18] != "paid"){
+                money1 -= dub
+                money2 += dub
+                p1paid[18] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=dub
-                money2 -=dub
-                p2paid[0] = "paid"
+            if (player3 == 20 && p3paid[18] != "paid"){
+                money2 += dub
+                money3 -= dub
+                p3paid[18] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=dub
-                money4 -=dub
-                p4paid[0] = "paid"
+            if (player4 == 20 && p4paid[18] != "paid"){
+                money2 += dub
+                money4 -= dub
+                p4paid[18] = "paid"
             }
         }
-        if (take[0] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=dub
-                money4 +=dub
-                p1paid[0] = "paid"
+        if (take[18] == "3"){
+            if (player1 == 20 && p1paid[18] != "paid"){
+                money1 -= dub
+                money3 += dub
+                p1paid[18] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=dub
-                money2 -=dub
-                p2paid[0] = "paid"
+            if (player2 == 20 && p2paid[18] != "paid"){
+                money3 += dub
+                money2 -= dub
+                p2paid[18] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=dub
-                money3 -=dub
-                p3paid[0] = "paid"
+            if (player4 == 20 && p4paid[18] != "paid"){
+                money3 += dub
+                money4 -= dub
+                p4paid[18] = "paid"
+            }
+        }
+        if (take[18] == "4"){
+            if (player1 == 20 && p1paid[18] != "paid"){
+                money1 -= dub
+                money4 += dub
+                p1paid[18] = "paid"
+            }
+            if (player2 == 20 && p2paid[18] != "paid"){
+                money4 += dub
+                money2 -= dub
+                p2paid[18] = "paid"
+            }
+            if (player4 == 20 && p4paid[18] != "paid"){
+                money4 += dub
+                money3 -= dub
+                p4paid[18] = "paid"
             }
         }
     }
     function parp(){
-        if (take[0] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=par
-                money2 -=par
-                p2paid[0] = "paid"
+        if (take[20] == "1"){
+            if (player2 == 22 && p2paid[20] != "paid"){
+                money1 += par
+                money2 -= par
+                p2paid[20] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=par
-                money3 -=par
-                p3paid[0] = "paid"
+            if (player3 == 22 && p3paid[20] != "paid"){
+                money1 += par
+                money3 -= par
+                p3paid[20] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=par
-                money4 -=par
-                p4paid[0] = "paid"
-            }
-        }
-        if (take[0] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=par
-                money2 +=par
-                p1paid[0] = "paid"
-            }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=par
-                money3 -=par
-                p3paid[0] = "paid"
-            }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=par
-                money4 -=par
-                p4paid[0] = "paid"
+            if (player4 == 22 && p4paid[20] != "paid"){
+                money1 += par
+                money4 -= par
+                p4paid[20] = "paid"
             }
         }
-        if (take[0] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=par
-                money3 +=par
-                p1paid[0] = "paid"
+        if (take[20] == "2"){
+            if (player1 == 22 && p1paid[20] != "paid"){
+                money1 -= par
+                money2 += par
+                p1paid[20] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=par
-                money2 -=par
-                p2paid[0] = "paid"
+            if (player3 == 22 && p3paid[20] != "paid"){
+                money2 += par
+                money3 -= par
+                p3paid[20] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=par
-                money4 -=par
-                p4paid[0] = "paid"
+            if (player4 == 22 && p4paid[20] != "paid"){
+                money2 += par
+                money4 -= par
+                p4paid[20] = "paid"
             }
         }
-        if (take[0] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=par
-                money4 +=par
-                p1paid[0] = "paid"
+        if (take[20] == "3"){
+            if (player1 == 22 && p1paid[20] != "paid"){
+                money1 -= par
+                money3 += par
+                p1paid[20] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=par
-                money2 -=par
-                p2paid[0] = "paid"
+            if (player2 == 22 && p2paid[20] != "paid"){
+                money3 += par
+                money2 -= par
+                p2paid[20] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=par
-                money3 -=par
-                p3paid[0] = "paid"
+            if (player4 == 22 && p4paid[20] != "paid"){
+                money3 += par
+                money4 -= par
+                p4paid[20] = "paid"
+            }
+        }
+        if (take[20] == "4"){
+            if (player1 == 22 && p1paid[20] != "paid"){
+                money1 -= par
+                money4 += par
+                p1paid[20] = "paid"
+            }
+            if (player2 == 22 && p2paid[20] != "paid"){
+                money4 += par
+                money2 -= par
+                p2paid[20] = "paid"
+            }
+            if (player4 == 22 && p4paid[20] != "paid"){
+                money4 += par
+                money3 -= par
+                p4paid[20] = "paid"
             }
         }
     }
     function hongp(){
-        if (take[0] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=hong
-                money2 -=hong
-                p2paid[0] = "paid"
+        if (take[21] == "1"){
+            if (player2 == 23 && p2paid[21] != "paid"){
+                money1 += hong
+                money2 -= hong
+                p2paid[21] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=hong
-                money3 -=hong
-                p3paid[0] = "paid"
+            if (player3 == 23 && p3paid[21] != "paid"){
+                money1 += hong
+                money3 -= hong
+                p3paid[21] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=hong
-                money4 -=hong
-                p4paid[0] = "paid"
-            }
-        }
-        if (take[0] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=hong
-                money2 +=hong
-                p1paid[0] = "paid"
-            }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=hong
-                money3 -=hong
-                p3paid[0] = "paid"
-            }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=hong
-                money4 -=hong
-                p4paid[0] = "paid"
+            if (player4 == 23 && p4paid[21] != "paid"){
+                money1 += hong
+                money4 -= hong
+                p4paid[21] = "paid"
             }
         }
-        if (take[0] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=hong
-                money3 +=hong
-                p1paid[0] = "paid"
+        if (take[21] == "2"){
+            if (player1 == 23 && p1paid[21] != "paid"){
+                money1 -= hong
+                money2 += hong
+                p1paid[21] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=hong
-                money2 -=hong
-                p2paid[0] = "paid"
+            if (player3 == 23 && p3paid[21] != "paid"){
+                money2 += hong
+                money3 -= hong
+                p3paid[21] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=hong
-                money4 -=hong
-                p4paid[0] = "paid"
+            if (player4 == 23 && p4paid[21] != "paid"){
+                money2 += hong
+                money4 -= hong
+                p4paid[21] = "paid"
             }
         }
-        if (take[0] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=hong
-                money4 +=hong
-                p1paid[0] = "paid"
+        if (take[21] == "3"){
+            if (player1 == 23 && p1paid[21] != "paid"){
+                money1 -= hong
+                money3 += hong
+                p1paid[21] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=hong
-                money2 -=hong
-                p2paid[0] = "paid"
+            if (player2 == 23 && p2paid[21] != "paid"){
+                money3 += hong
+                money2 -= hong
+                p2paid[21] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=hong
-                money3 -=hong
-                p3paid[0] = "paid"
+            if (player4 == 23 && p4paid[21] != "paid"){
+                money3 += hong
+                money4 -= hong
+                p4paid[21] = "paid"
+            }
+        }
+        if (take[21] == "4"){
+            if (player1 == 23 && p1paid[21] != "paid"){
+                money1 -= hong
+                money4 += hong
+                p1paid[21] = "paid"
+            }
+            if (player2 == 23 && p2paid[21] != "paid"){
+                money4 += hong
+                money2 -= hong
+                p2paid[21] = "paid"
+            }
+            if (player4 == 23 && p4paid[21] != "paid"){
+                money4 += hong
+                money3 -= hong
+                p4paid[21] = "paid"
             }
         }
     }
     function londp(){
-        if (take[0] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=lond
-                money2 -=lond
-                p2paid[0] = "paid"
+        if (take[22] == "1"){
+            if (player2 == 24 && p2paid[22] != "paid"){
+                money1 += lond
+                money2 -= lond
+                p2paid[22] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=lond
-                money3 -=lond
-                p3paid[0] = "paid"
+            if (player3 == 24 && p3paid[22] != "paid"){
+                money1 += lond
+                money3 -= lond
+                p3paid[22] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=lond
-                money4 -=lond
-                p4paid[0] = "paid"
-            }
-        }
-        if (take[0] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=lond
-                money2 +=lond
-                p1paid[0] = "paid"
-            }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=lond
-                money3 -=lond
-                p3paid[0] = "paid"
-            }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=lond
-                money4 -=lond
-                p4paid[0] = "paid"
+            if (player4 == 24 && p4paid[22] != "paid"){
+                money1 += lond
+                money4 -= lond
+                p4paid[22] = "paid"
             }
         }
-        if (take[0] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=lond
-                money3 +=lond
-                p1paid[0] = "paid"
+        if (take[22] == "2"){
+            if (player1 == 24 && p1paid[22] != "paid"){
+                money1 -= lond
+                money2 += lond
+                p1paid[22] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=lond
-                money2 -=lond
-                p2paid[0] = "paid"
+            if (player3 == 24 && p3paid[22] != "paid"){
+                money2 += lond
+                money3 -= lond
+                p3paid[22] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=lond
-                money4 -=lond
-                p4paid[0] = "paid"
+            if (player4 == 24 && p4paid[22] != "paid"){
+                money2 += lond
+                money4 -= lond
+                p4paid[22] = "paid"
             }
         }
-        if (take[0] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=lond
-                money4 +=lond
-                p1paid[0] = "paid"
+        if (take[22] == "3"){
+            if (player1 == 24 && p1paid[22] != "paid"){
+                money1 -= lond
+                money3 += lond
+                p1paid[22] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=lond
-                money2 -=lond
-                p2paid[0] = "paid"
+            if (player2 == 24 && p2paid[22] != "paid"){
+                money3 += lond
+                money2 -= lond
+                p2paid[22] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=lond
-                money3 -=lond
-                p3paid[0] = "paid"
+            if (player4 == 24 && p4paid[22] != "paid"){
+                money3 += lond
+                money4 -= lond
+                p4paid[22] = "paid"
+            }
+        }
+        if (take[22] == "4"){
+            if (player1 == 24 && p1paid[22] != "paid"){
+                money1 -= lond
+                money4 += lond
+                p1paid[22] = "paid"
+            }
+            if (player2 == 24 && p2paid[22] != "paid"){
+                money4 += lond
+                money2 -= lond
+                p2paid[22] = "paid"
+            }
+            if (player4 == 24 && p4paid[22] != "paid"){
+                money4 += lond
+                money3 -= lond
+                p4paid[22] = "paid"
             }
         }
     }
     function airp(){
-        if (take[0] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=air
-                money2 -=air
-                p2paid[0] = "paid"
+        if (take[23] == "1"){
+            if (player2 == 25 && p2paid[23] != "paid"){
+                money1 += air
+                money2 -= air
+                p2paid[23] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=air
-                money3 -=air
-                p3paid[0] = "paid"
+            if (player3 == 25 && p3paid[23] != "paid"){
+                money1 += air
+                money3 -= air
+                p3paid[23] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=air
-                money4 -=air
-                p4paid[0] = "paid"
-            }
-        }
-        if (take[0] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=air
-                money2 +=air
-                p1paid[0] = "paid"
-            }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=air
-                money3 -=air
-                p3paid[0] = "paid"
-            }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=air
-                money4 -=air
-                p4paid[0] = "paid"
+            if (player4 == 25 && p4paid[23] != "paid"){
+                money1 += air
+                money4 -= air
+                p4paid[23] = "paid"
             }
         }
-        if (take[0] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=air
-                money3 +=air
-                p1paid[0] = "paid"
+        if (take[23] == "2"){
+            if (player1 == 25 && p1paid[23] != "paid"){
+                money1 -= air
+                money2 += air
+                p1paid[23] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=air
-                money2 -=air
-                p2paid[0] = "paid"
+            if (player3 == 25 && p3paid[23] != "paid"){
+                money2 += air
+                money3 -= air
+                p3paid[23] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=air
-                money4 -=air
-                p4paid[0] = "paid"
+            if (player4 == 25 && p4paid[23] != "paid"){
+                money2 += air
+                money4 -= air
+                p4paid[23] = "paid"
             }
         }
-        if (take[0] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=air
-                money4 +=air
-                p1paid[0] = "paid"
+        if (take[23] == "3"){
+            if (player1 == 25 && p1paid[23] != "paid"){
+                money1 -= air
+                money3 += air
+                p1paid[23] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=air
-                money2 -=air
-                p2paid[0] = "paid"
+            if (player2 == 25 && p2paid[23] != "paid"){
+                money3 += air
+                money2 -= air
+                p2paid[23] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=air
-                money3 -=air
-                p3paid[0] = "paid"
+            if (player4 == 25 && p4paid[23] != "paid"){
+                money3 += air
+                money4 -= air
+                p4paid[23] = "paid"
+            }
+        }
+        if (take[23] == "4"){
+            if (player1 == 25 && p1paid[23] != "paid"){
+                money1 -= air
+                money4 += air
+                p1paid[23] = "paid"
+            }
+            if (player2 == 25 && p2paid[23] != "paid"){
+                money4 += air
+                money2 -= air
+                p2paid[23] = "paid"
+            }
+            if (player4 == 25 && p4paid[23] != "paid"){
+                money4 += air
+                money3 -= air
+                p4paid[23] = "paid"
             }
         }
     }
     function tokp(){
-        if (take[0] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=tok
-                money2 -=tok
-                p2paid[0] = "paid"
+        if (take[24] == "1"){
+            if (player2 == 26 && p2paid[24] != "paid"){
+                money1 += tok
+                money2 -= tok
+                p2paid[24] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=tok
-                money3 -=tok
-                p3paid[0] = "paid"
+            if (player3 == 26 && p3paid[24] != "paid"){
+                money1 += tok
+                money3 -= tok
+                p3paid[24] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=tok
-                money4 -=tok
-                p4paid[0] = "paid"
-            }
-        }
-        if (take[0] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=tok
-                money2 +=tok
-                p1paid[0] = "paid"
-            }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=tok
-                money3 -=tok
-                p3paid[0] = "paid"
-            }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=tok
-                money4 -=tok
-                p4paid[0] = "paid"
+            if (player4 == 26 && p4paid[24] != "paid"){
+                money1 += tok
+                money4 -= tok
+                p4paid[24] = "paid"
             }
         }
-        if (take[0] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=tok
-                money3 +=tok
-                p1paid[0] = "paid"
+        if (take[24] == "2"){
+            if (player1 == 26 && p1paid[24] != "paid"){
+                money1 -= tok
+                money2 += tok
+                p1paid[24] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=tok
-                money2 -=tok
-                p2paid[0] = "paid"
+            if (player3 == 26 && p3paid[24] != "paid"){
+                money2 += tok
+                money3 -= tok
+                p3paid[24] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=tok
-                money4 -=tok
-                p4paid[0] = "paid"
+            if (player4 == 26 && p4paid[24] != "paid"){
+                money2 += tok
+                money4 -= tok
+                p4paid[24] = "paid"
             }
         }
-        if (take[0] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=tok
-                money4 +=tok
-                p1paid[0] = "paid"
+        if (take[24] == "3"){
+            if (player1 == 26 && p1paid[24] != "paid"){
+                money1 -= tok
+                money3 += tok
+                p1paid[24] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=tok
-                money2 -=tok
-                p2paid[0] = "paid"
+            if (player2 == 26 && p2paid[24] != "paid"){
+                money3 += tok
+                money2 -= tok
+                p2paid[24] = "paid"
             }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=tok
-                money3 -=tok
-                p3paid[0] = "paid"
+            if (player4 == 26 && p4paid[24] != "paid"){
+                money3 += tok
+                money4 -= tok
+                p4paid[24] = "paid"
+            }
+        }
+        if (take[24] == "4"){
+            if (player1 == 26 && p1paid[24] != "paid"){
+                money1 -= tok
+                money4 += tok
+                p1paid[24] = "paid"
+            }
+            if (player2 == 26 && p2paid[24] != "paid"){
+                money4 += tok
+                money2 -= tok
+                p2paid[24] = "paid"
+            }
+            if (player4 == 26 && p4paid[24] != "paid"){
+                money4 += tok
+                money3 -= tok
+                p4paid[24] = "paid"
             }
         }
     }
     function nyp(){
-        if (take[0] == "1"){
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money1 +=nyp
-                money2 -=nyp
-                p2paid[0] = "paid"
+        if (take[25] == "1"){
+            if (player2 == 27 && p2paid[25] != "paid"){
+                money1 += ny
+                money2 -= ny
+                p2paid[25] = "paid"
             }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money1 +=nyp
-                money3 -=nyp
-                p3paid[0] = "paid"
+            if (player3 == 27 && p3paid[25] != "paid"){
+                money1 += ny
+                money3 -= ny
+                p3paid[25] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money1 +=nyp
-                money4 -=nyp
-                p4paid[0] = "paid"
-            }
-        }
-        if (take[0] == "2"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=nyp
-                money2 +=nyp
-                p1paid[0] = "paid"
-            }
-            if (player3 == 1 && p3paid[0] != "paid"){
-                money2 +=nyp
-                money3 -=nyp
-                p3paid[0] = "paid"
-            }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money2 +=nyp
-                money4 -=nyp
-                p4paid[0] = "paid"
+            if (player4 == 27 && p4paid[25] != "paid"){
+                money1 += ny
+                money4 -= ny
+                p4paid[25] = "paid"
             }
         }
-        if (take[0] == "3"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=nyp
-                money3 +=nyp
-                p1paid[0] = "paid"
+        if (take[25] == "2"){
+            if (player1 == 27 && p1paid[25] != "paid"){
+                money1 -= ny
+                money2 += ny
+                p1paid[25] = "paid"
             }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money3 +=nyp
-                money2 -=nyp
-                p2paid[0] = "paid"
+            if (player3 == 27 && p3paid[25] != "paid"){
+                money2 += ny
+                money3 -= ny
+                p3paid[25] = "paid"
             }
-            if (player4 == 1 && p4paid[0] != "paid"){
-                money3 +=nyp
-                money4 -=nyp
-                p4paid[0] = "paid"
-            }
-        }
-        if (take[0] == "4"){
-            if (player1 == 1 && p1paid[0] != "paid"){
-                money1 -=nyp
-                money4 +=nyp
-                p1paid[0] = "paid"
-            }
-            if (player2 == 1 && p2paid[0] != "paid"){
-                money4 +=nyp
-                money2 -=nyp
-                p2paid[0] = "paid"
-            }
-            if (player4 == 1 && p3paid[0] != "paid"){
-                money4 +=nyp
-                money3 -=nyp
-                p3paid[0] = "paid"
+            if (player4 == 27 && p4paid[25] != "paid"){
+                money2 += ny
+                money4 -= ny
+                p4paid[25] = "paid"
             }
         }
+        if (take[25] == "3"){
+            if (player1 == 27 && p1paid[25] != "paid"){
+                money1 -= ny
+                money3 += ny
+                p1paid[25] = "paid"
+            }
+            if (player2 == 27 && p2paid[25] != "paid"){
+                money3 += ny
+                money2 -= ny
+                p2paid[25] = "paid"
+            }
+            if (player4 == 27 && p4paid[25] != "paid"){
+                money3 += ny
+                money4 -= ny
+                p4paid[25] = "paid"
+            }
+        }
+        if (take[25] == "4"){
+            if (player1 == 27 && p1paid[25] != "paid"){
+                money1 -= ny
+                money4 += ny
+                p1paid[25] = "paid"
+            }
+            if (player2 == 27 && p2paid[25] != "paid"){
+                money4 += ny
+                money2 -= ny
+                p2paid[25] = "paid"
+            }
+            if (player4 == 27 && p4paid[25] != "paid"){
+                money4 += ny
+                money3 -= ny
+                p4paid[25] = "paid"
+            }
+        }
+    }
+
+    function blabla(){
+        const element = document.getElementById("test")
+        element.classList.remove("board")
     }
     
